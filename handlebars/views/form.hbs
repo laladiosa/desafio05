@@ -1,0 +1,16 @@
+<div class=" d-flex justify-content-center">
+    <div class="mt-5 d-flex flex-column">
+        <h4 class="mb-3 text-light">{{title}}</h4>
+        <form class="d-flex flex-column" method="POST" action="api/productos/">
+            <div>
+                <div class="mb-1"> <input class="w-100" name="title" type="text" placeholder="Nombre del producto" />
+                </div>
+                <div class="mb-1"> <input class="w-100" name="price" type="text" placeholder="Precio" /> </div>
+                <div class="mb-1"> <input class="w-100" name="thumbnail" type="text" placeholder="Url imagen" /> </div>
+            </div>
+            <input type="submit" class="btn btn-success mt-3 w-50 align-self-center" value="Send">Enviar</input>
+        </form>
+        <button class="btn btn-secondary mt-3 w-50 align-self-center"
+            onclick="location.href='http://localhost:8080/api/productos'">View products</button>
+    </div>
+</div>
